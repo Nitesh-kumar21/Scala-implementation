@@ -1,5 +1,7 @@
 package com.rockthejvm
 
+import scala.Console.println
+
 object Basics extends App {
   val meaningOfLife: Int = 42
   val aBoolean = false
@@ -21,8 +23,14 @@ object Basics extends App {
   def factorial(n: Int): Int = {
     if (n <= 1) 1
     else n * factorial(n - 1)
+
+
   }
 
 
+  val a =Array(11,22,34,5,61)
+//  a.mkString.reduceLeft(_ min _)
+  val ts = a.mkString("").min
+  print(ts)
 
 }
